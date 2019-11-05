@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+
+    @{
+        ViewBag.Title = "Login";
+    }
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Diseño</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row" style="margin-top:7%">
+            <div class="col-md-6 col-lg-offset-3 margin-top-50">
+                <img src="~/assets/img/login.jpg" class="img-responsive" />
+            </div>
+        </div>
+
+        <div class="row" style="margin-top:5%">
+            <div class="col-md-6 col-lg-offset-3 margin-top-50">
+                <input type="text" id="usuario" class="form-control text-center" style="font-size:20px !important; border:2px solid #ababab !important; border-radius:25px 25px 25px 25px !important; width:275px !important">
+            </div>
+        </div>
+
+        <div class="row" style="margin-top:5%">
+            <div class="col-md-6 col-lg-offset-3 margin-top-50">
+                <input type="password" id="contraseña" class="form-control text-center" style="font-size:20px !important; border:2px solid #ababab !important; border-radius:25px 25px 25px 25px !important; width:275px !important">
+            </div>
+        </div>
+
+       <div class="row">
+           <div class="col-md-6 col-lg-offset-3">
+               <a href="#" data-toggle="modal" style="font-size:20px;" data-target="#Olvido_Constraseña" />¿Olvidó su Constraseña?
+           </div>
+       </div>
+
+       <div class="row text-center" style="margin-top:2%">
+           <div class="col-md-6 col-lg-offset-3">
+               <input type="button" id="btnEntrar" style="color:white !important; font-size:20px !important; border-radius:25px 25px 25px 25px !important" />Entrar
+           </div>
+       </div>
+    </div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+</body>
+</html>
