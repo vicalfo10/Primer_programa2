@@ -9,7 +9,7 @@ namespace Primer_Programa.Controllers
     public class SistemaController : Controller
     {
         // GET: SIstema
-        public ActionResult Index()
+        public ActionResult Sistema()
         {
             return View();
         }

@@ -28,19 +28,18 @@
                         <img src="~/assets/img/login.jpg" class="img-responsive" />
                     </div>
                     <div class="panel-body">
-                        <div class="form-group">
-                            <input type="text" placeholder="Usuario" id="txt_usuario" name="usuario" class="form-control text-center" value="@Model.usuario" autofocus />
-                        </div>
-                        <div class="form-group">
-                            <input type="password" placeholder="Contraseña" id="txt_contraseña" name="contraseña" class="form-control text-center" value="@Model.contraseña" />
-                        </div>
-                        <!--<a href="#" data-toggle="modal" style="font-size:20px;" data-target="#Olvido_Constraseña" />¿Olvidó su Constraseña?-->
-
-                        <button onclick="Ingresar()" class="btn btn-primary shadow-2 mb-4">Entrar</button>
-                        <br />
-                        <label>Usuario: @Model.usuario </label>
-                        <br />
-                        <label>Usuario: @Model.contraseña </label>
+                            <div class="form-group">
+                                <input type="text" placeholder="Usuario" id="txt_usuario" name="usuario" class="form-control text-center" value="" autofocus />
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="Contraseña" id="txt_contraseña" name="contraseña" class="form-control text-center" value="" />
+                            </div>
+                            <!--<a href="#" data-toggle="modal" style="font-size:20px;" data-target="#Olvido_Constraseña" />¿Olvidó su Constraseña?-->
+                            <button onclick="Ingresar()" class="btn btn-primary shadow-2 mb-4">Entrar</button>
+                            <br />
+                            <label>Usuario: @Model.usuario </label>
+                            <br />
+                            <label>Usuario: @Model.contraseña </label>
                     </div>
                 </div>
             </div>
