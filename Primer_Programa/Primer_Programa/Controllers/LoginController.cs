@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Primer_Programa.Models;
 
 
 namespace Primer_Programa.Controllers
@@ -12,7 +13,14 @@ namespace Primer_Programa.Controllers
         // GET: Login
         public ActionResult Login()
         {
-            return View();
+
+            Conexion con = new Conexion();
+
+            Login obj = new Login();
+            obj.usuario = "vgrana01";
+            obj.contraseña = "123";
+        
+            return View(obj);
         }
     }
 }
