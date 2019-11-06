@@ -1,58 +1,45 @@
-﻿<!DOCTYPE html>
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<!DOCTYPE html>
 
 <html lang="en">
 <head>
 
-    @{
-        ViewBag.Title = "Login";
-    }
-
+    <meta name="viewport" content="width=device-width" />
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primer Diseño</title>
-    <link rel="stylesheet" href="~/Content/Site.css"  />
-    <link rel="stylesheet" href="~/Content/bootstrap.min.css"  />
-    <link rel="shortcut icon" href="favico_perro.png" />
-    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <meta name="description" content="Primer Programa" />
+    <meta name="keywords" content="HTML5, CSS, JAVASCRIPT" />
+    <!--<title>Primer Diseño</title>-->
+    <!--<link rel="stylesheet" href="~/Content/Site.css" />-->
+    <!--<link rel="stylesheet" href="~/Content/bootstrap.min.css" />-->
+    <link rel="icon" href="favico_perro.png" type="image/x-icon">
 
 </head>
 
 <body>
+        <div class="container">
+            <div class="auth-wrapper">
+                <div class="auth-content">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h3 class="mb-6">Login</h3>
 
-    <header class="container">
-        <div class="row" style="margin-top:7%">
-            <div class="col-md-6 col-lg-offset-3 margin-top-50">
-                <img src="~/assets/img/login.jpg" class="img-responsive" />
+                            <img src="~/assets/img/login.jpg" class="img-responsive" />
+                            <input type="text" placeholder="Usuario" id="usuario" class="form-control" value="">
+                            <input type="password" placeholder="Contraseña" id="contraseña" class="form-control" value="">
+                                <!--<a href="#" data-toggle="modal" style="font-size:20px;" data-target="#Olvido_Constraseña" />¿Olvidó su Constraseña?-->
+
+                                <button onclick="Ingresar()" class="btn btn-primary shadow-2 mb-4">Entrar</button>
+                            </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="row" style="margin-top:5%">
-            <div class="col-md-12 col-lg-offset-3 margin-top-50">
-                <input type="text" placeholder="Usuario" id="usuario" class="form-control text-center" style="font-size:20px !important; border:2px solid #ababab !important; border-radius:25px 25px 25px 25px !important; width:275px !important">
-            </div>
-        </div>
-
-        <div class="row" style="margin-top:5%">
-            <div class="col-md-6 col-lg-offset-3 margin-top-50">
-                <input type="password" placeholder="Contraseña" id="contraseña" class="form-control text-center" style="font-size:20px !important; border:2px solid #ababab !important; border-radius:25px 25px 25px 25px !important; width:275px !important">
-            </div>
-        </div>
-
-       <div class="row">
-           <div class="col-md-6 col-lg-offset-3">
-               <a href="#" data-toggle="modal" style="font-size:20px;" data-target="#Olvido_Constraseña" />¿Olvidó su Constraseña?
-           </div>
-       </div>
-
-       <div class="row text-center" style="margin-top:2%">
-           <div class="col-md-6 col-lg-offset-3">
-               <input type="submit" id="btnEntrar" style="color:white !important; font-size:20px !important; border-radius:25px 25px 25px 25px !important" />Entrar
-           </div>
-       </div>
-    </header>
-
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
+    <!--<script src="~/Scripts/jquery-1.10.2.min.js"></script>-->
+    <!--<script src="~/Scripts/bootstrap.min.js"></script>-->
 
 </body>
 </html>
