@@ -11,7 +11,8 @@ namespace Primer_Programa.Models
     {
         SqlConnection CN = new SqlConnection();
 
-        public string CadenaConexion = @"Data Source=VICTOR_DBA\DESARROLLO;Database=t_prueba;User ID=desarrollo;Password=123";
+        //public string CadenaConexion = @"Data Source=VICTOR_DBA\DESARROLLO;Database=t_prueba;User ID=desarrollo;Password=123";
+        public string CadenaConexion = @"Data Source=CRI-D2856\SQLVICTOR;Database=prueba;User ID=sa;Password=123";
 
         public bool encontrar = false;
         public string mensaje = "";
@@ -53,3 +54,20 @@ namespace Primer_Programa.Models
         }
     }
 }
+
+/*create database prueba
+
+go
+
+use prueba
+
+go
+
+create table t_login
+(
+    cod_login integer identity (1,1) primary key,
+    nombre    varchar(50),
+	usuario char(8),
+	clave int,
+	estado int
+)*/

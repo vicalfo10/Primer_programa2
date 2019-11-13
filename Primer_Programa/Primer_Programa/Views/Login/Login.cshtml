@@ -14,7 +14,7 @@
     <meta name="description" content="Primer Programa" />
     <meta name="keywords" content="HTML5, CSS, JAVASCRIPT" />
     <!--<title>Primer Diseño</title>-->
-    <link rel="stylesheet" href="~/Content/Site.css" />
+    <link rel="stylesheet" href="~/assets/css/style.css" />
     <link rel="stylesheet" href="~/Content/bootstrap.min.css" />
 
 </head>
@@ -36,10 +36,10 @@
                             </div>
                             <!--<a href="#" data-toggle="modal" style="font-size:20px;" data-target="#Olvido_Constraseña" />¿Olvidó su Constraseña?-->
                             <button onclick="Ingresar()" class="btn btn-primary shadow-2 mb-4">Entrar</button>
-                            <br />
+                            <!--<br />
                             <label>Usuario: @Model.usuario </label>
                             <br />
-                            <label>Usuario: @Model.contraseña </label>
+                            <label>Usuario: @Model.contraseña </label>-->
                     </div>
                 </div>
             </div>
@@ -48,6 +48,13 @@
 
    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
    <script src="~/Scripts/bootstrap.min.js"></script>
+
+    <script>
+        function Ingresar()
+        {
+            window.location.href = "@Url.Action("Sistema","Sistema")"
+        }
+    </script>
 
 </body>
 </html>
